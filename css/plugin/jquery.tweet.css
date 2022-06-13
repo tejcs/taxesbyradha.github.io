@@ -1,0 +1,9 @@
+.tweet_list { list-style: none; }
+.tweet_list li { 
+	display: block; padding-left: 30px; background: url(../../images/icons/tweet.png) no-repeat 0 5px; padding-bottom: 20px; 
+	margin-bottom: 20px; border-bottom: 1px dashed #ddd;  
+}
+.tweet_list li:last-child { border-bottom: 0; padding-bottom: 0; margin-bottom: 0; }
+.tweet_list li .tweet_time { font-size: 11px; }
+.tweet_list li .tweet_time a { color: #999; }
+.tweet_list li .tweet_time a:hover { color: #666; }
