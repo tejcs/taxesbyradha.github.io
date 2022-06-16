@@ -1,275 +1,1026 @@
-<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Services - Sam Responsive HTML5 Template</title>
-<link rel="stylesheet" href="css/style.default.css" type="text/css" />
-<!--[if IE 8]>
-    <link rel="stylesheet" media="screen" href="css/style.ie8.css"/>
-<![endif]-->
-<!--[if IE 7]>
-    <link rel="stylesheet" media="screen" href="css/style.ie7.css"/>
-<![endif]-->
-<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
-<script type="text/javascript" src="js/plugins/jquery-ui-1.8.16.custom.min.js"></script>
-<script type="text/javascript" src="js/plugins/jquery.colorbox-min.js"></script>
-<script type="text/javascript" src="js/plugins/superfish.js"></script>
-<script type="text/javascript" src="js/plugins/jflickrfeed.min.js"></script>
-<script type="text/javascript" src="js/plugins/jquery.tweet.js"></script>
-<script type="text/javascript" src="js/custom.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - TaxesbyRadha</title>
+    <link rel="stylesheet" href="css/style.default.css" type="text/css">
+    <link rel="stylesheet" href="css/custom.css" type="text/css">
+    <!--[if IE 8]>
+        <link rel="stylesheet" media="screen" href="css/style.ie8.css"/>
+    <![endif]-->
+    <!--[if IE 7]>
+        <link rel="stylesheet" media="screen" href="css/style.ie7.css"/>
+    <![endif]-->
+    <script src="https://connect.facebook.net/en_US/all.js?hash=5073d25d45f2ee0084966534d14073d6" async="" crossorigin="anonymous"></script>
+    <script id="twitter-wjs" src="//platform.twitter.com/widgets.js"></script>
+    <script id="facebook-jssdk" src="//connect.facebook.net/en_US/all.js#xfbml=1"></script>
+    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery-ui-1.8.16.custom.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="js/plugins/superfish.js"></script>
+    <script type="text/javascript" src="js/plugins/jflickrfeed.min.js"></script>
+
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" language="javascript" src="/Scripts/Main.js"></script>
+
+
+    <style type="text/css" data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe">
+        .fb_hidden {
+            position: absolute;
+            top: -10000px;
+            z-index: 10001
+        }
+        
+        .fb_reposition {
+            overflow: hidden;
+            position: relative
+        }
+        
+        .fb_invisible {
+            display: none
+        }
+        
+        .fb_reset {
+            background: none;
+            border: 0;
+            border-spacing: 0;
+            color: #000;
+            cursor: auto;
+            direction: ltr;
+            font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+            font-size: 11px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: normal;
+            letter-spacing: normal;
+            line-height: 1;
+            margin: 0;
+            overflow: visible;
+            padding: 0;
+            text-align: left;
+            text-decoration: none;
+            text-indent: 0;
+            text-shadow: none;
+            text-transform: none;
+            visibility: visible;
+            white-space: normal;
+            word-spacing: normal
+        }
+        
+        .fb_reset>div {
+            overflow: hidden
+        }
+        
+        @keyframes fb_transform {
+            from {
+                opacity: 0;
+                transform: scale(.95)
+            }
+            to {
+                opacity: 1;
+                transform: scale(1)
+            }
+        }
+        
+        .fb_animate {
+            animation: fb_transform .3s forwards
+        }
+        
+        .fb_dialog {
+            background: rgba(82, 82, 82, .7);
+            position: absolute;
+            top: -10000px;
+            z-index: 10001
+        }
+        
+        .fb_dialog_advanced {
+            border-radius: 8px;
+            padding: 10px
+        }
+        
+        .fb_dialog_content {
+            background: #fff;
+            color: #373737
+        }
+        
+        .fb_dialog_close_icon {
+            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;
+            cursor: pointer;
+            display: block;
+            height: 15px;
+            position: absolute;
+            right: 18px;
+            top: 17px;
+            width: 15px
+        }
+        
+        .fb_dialog_mobile .fb_dialog_close_icon {
+            left: 5px;
+            right: auto;
+            top: 5px
+        }
+        
+        .fb_dialog_padding {
+            background-color: transparent;
+            position: absolute;
+            width: 1px;
+            z-index: -1
+        }
+        
+        .fb_dialog_close_icon:hover {
+            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent
+        }
+        
+        .fb_dialog_close_icon:active {
+            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent
+        }
+        
+        .fb_dialog_iframe {
+            line-height: 0
+        }
+        
+        .fb_dialog_content .dialog_title {
+            background: #6d84b4;
+            border: 1px solid #365899;
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 0
+        }
+        
+        .fb_dialog_content .dialog_title>span {
+            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;
+            float: left;
+            padding: 5px 0 7px 26px
+        }
+        
+        body.fb_hidden {
+            height: 100%;
+            left: 0;
+            margin: 0;
+            overflow: visible;
+            position: absolute;
+            top: -10000px;
+            transform: none;
+            width: 100%
+        }
+        
+        .fb_dialog.fb_dialog_mobile.loading {
+            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;
+            min-height: 100%;
+            min-width: 100%;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            z-index: 10001
+        }
+        
+        .fb_dialog.fb_dialog_mobile.loading.centered {
+            background: none;
+            height: auto;
+            min-height: initial;
+            min-width: initial;
+            width: auto
+        }
+        
+        .fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner {
+            width: 100%
+        }
+        
+        .fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content {
+            background: none
+        }
+        
+        .loading.centered #fb_dialog_loader_close {
+            clear: both;
+            color: #fff;
+            display: block;
+            font-size: 18px;
+            padding-top: 20px
+        }
+        
+        #fb-root #fb_dialog_ipad_overlay {
+            background: rgba(0, 0, 0, .4);
+            bottom: 0;
+            left: 0;
+            min-height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 100%;
+            z-index: 10000
+        }
+        
+        #fb-root #fb_dialog_ipad_overlay.hidden {
+            display: none
+        }
+        
+        .fb_dialog.fb_dialog_mobile.loading iframe {
+            visibility: hidden
+        }
+        
+        .fb_dialog_mobile .fb_dialog_iframe {
+            position: sticky;
+            top: 0
+        }
+        
+        .fb_dialog_content .dialog_header {
+            background: linear-gradient(from(#738aba), to(#2c4987));
+            border-bottom: 1px solid;
+            border-color: #043b87;
+            box-shadow: white 0 1px 1px -1px inset;
+            color: #fff;
+            font: bold 14px Helvetica, sans-serif;
+            text-overflow: ellipsis;
+            text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0;
+            vertical-align: middle;
+            white-space: nowrap
+        }
+        
+        .fb_dialog_content .dialog_header table {
+            height: 43px;
+            width: 100%
+        }
+        
+        .fb_dialog_content .dialog_header td.header_left {
+            font-size: 12px;
+            padding-left: 5px;
+            vertical-align: middle;
+            width: 60px
+        }
+        
+        .fb_dialog_content .dialog_header td.header_right {
+            font-size: 12px;
+            padding-right: 5px;
+            vertical-align: middle;
+            width: 60px
+        }
+        
+        .fb_dialog_content .touchable_button {
+            background: linear-gradient(from(#4267B2), to(#2a4887));
+            background-clip: padding-box;
+            border: 1px solid #29487d;
+            border-radius: 3px;
+            display: inline-block;
+            line-height: 18px;
+            margin-top: 3px;
+            max-width: 85px;
+            padding: 4px 12px;
+            position: relative
+        }
+        
+        .fb_dialog_content .dialog_header .touchable_button input {
+            background: none;
+            border: none;
+            color: #fff;
+            font: bold 12px Helvetica, sans-serif;
+            margin: 2px -12px;
+            padding: 2px 6px 3px 6px;
+            text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0
+        }
+        
+        .fb_dialog_content .dialog_header .header_center {
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 18px;
+            text-align: center;
+            vertical-align: middle
+        }
+        
+        .fb_dialog_content .dialog_content {
+            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;
+            border: 1px solid #4a4a4a;
+            border-bottom: 0;
+            border-top: 0;
+            height: 150px
+        }
+        
+        .fb_dialog_content .dialog_footer {
+            background: #f5f6f7;
+            border: 1px solid #4a4a4a;
+            border-top-color: #ccc;
+            height: 40px
+        }
+        
+        #fb_dialog_loader_close {
+            float: left
+        }
+        
+        .fb_dialog.fb_dialog_mobile .fb_dialog_close_icon {
+            visibility: hidden
+        }
+        
+        #fb_dialog_loader_spinner {
+            animation: rotateSpinner 1.2s linear infinite;
+            background-color: transparent;
+            background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            height: 24px;
+            width: 24px
+        }
+        
+        @keyframes rotateSpinner {
+            0% {
+                transform: rotate(0deg)
+            }
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+        
+        .fb_iframe_widget {
+            display: inline-block;
+            position: relative
+        }
+        
+        .fb_iframe_widget span {
+            display: inline-block;
+            position: relative;
+            text-align: justify
+        }
+        
+        .fb_iframe_widget iframe {
+            position: absolute
+        }
+        
+        .fb_iframe_widget_fluid_desktop,
+        .fb_iframe_widget_fluid_desktop span,
+        .fb_iframe_widget_fluid_desktop iframe {
+            max-width: 100%
+        }
+        
+        .fb_iframe_widget_fluid_desktop iframe {
+            min-width: 220px;
+            position: relative
+        }
+        
+        .fb_iframe_widget_lift {
+            z-index: 1
+        }
+        
+        .fb_iframe_widget_fluid {
+            display: inline
+        }
+        
+        .fb_iframe_widget_fluid span {
+            width: 100%
+        }
+        
+        .fb_mpn_mobile_landing_page_slide_out {
+            animation-duration: 200ms;
+            animation-name: fb_mpn_landing_page_slide_out;
+            transition-timing-function: ease-in
+        }
+        
+        .fb_mpn_mobile_landing_page_slide_out_from_left {
+            animation-duration: 200ms;
+            animation-name: fb_mpn_landing_page_slide_out_from_left;
+            transition-timing-function: ease-in
+        }
+        
+        .fb_mpn_mobile_landing_page_slide_up {
+            animation-duration: 500ms;
+            animation-name: fb_mpn_landing_page_slide_up;
+            transition-timing-function: ease-in
+        }
+        
+        .fb_mpn_mobile_bounce_in {
+            animation-duration: 300ms;
+            animation-name: fb_mpn_bounce_in;
+            transition-timing-function: ease-in
+        }
+        
+        .fb_mpn_mobile_bounce_out {
+            animation-duration: 300ms;
+            animation-name: fb_mpn_bounce_out;
+            transition-timing-function: ease-in
+        }
+        
+        .fb_mpn_mobile_bounce_out_v2 {
+            animation-duration: 300ms;
+            animation-name: fb_mpn_fade_out;
+            transition-timing-function: ease-in
+        }
+        
+        .fb_customer_chat_bounce_in_v2 {
+            animation-duration: 300ms;
+            animation-name: fb_bounce_in_v2;
+            transition-timing-function: ease-in
+        }
+        
+        .fb_customer_chat_bounce_in_from_left {
+            animation-duration: 300ms;
+            animation-name: fb_bounce_in_from_left;
+            transition-timing-function: ease-in
+        }
+        
+        .fb_customer_chat_bounce_out_v2 {
+            animation-duration: 300ms;
+            animation-name: fb_bounce_out_v2;
+            transition-timing-function: ease-in
+        }
+        
+        .fb_customer_chat_bounce_out_from_left {
+            animation-duration: 300ms;
+            animation-name: fb_bounce_out_from_left;
+            transition-timing-function: ease-in
+        }
+        
+        .fb_invisible_flow {
+            display: inherit;
+            height: 0;
+            overflow-x: hidden;
+            width: 0
+        }
+        
+        @keyframes fb_mpn_landing_page_slide_out {
+            0% {
+                margin: 0 12px;
+                width: 100% - 24px
+            }
+            60% {
+                border-radius: 18px
+            }
+            100% {
+                border-radius: 50%;
+                margin: 0 24px;
+                width: 60px
+            }
+        }
+        
+        @keyframes fb_mpn_landing_page_slide_out_from_left {
+            0% {
+                left: 12px;
+                width: 100% - 24px
+            }
+            60% {
+                border-radius: 18px
+            }
+            100% {
+                border-radius: 50%;
+                left: 12px;
+                width: 60px
+            }
+        }
+        
+        @keyframes fb_mpn_landing_page_slide_up {
+            0% {
+                bottom: 0;
+                opacity: 0
+            }
+            100% {
+                bottom: 24px;
+                opacity: 1
+            }
+        }
+        
+        @keyframes fb_mpn_bounce_in {
+            0% {
+                opacity: .5;
+                top: 100%
+            }
+            100% {
+                opacity: 1;
+                top: 0
+            }
+        }
+        
+        @keyframes fb_mpn_fade_out {
+            0% {
+                bottom: 30px;
+                opacity: 1
+            }
+            100% {
+                bottom: 0;
+                opacity: 0
+            }
+        }
+        
+        @keyframes fb_mpn_bounce_out {
+            0% {
+                opacity: 1;
+                top: 0
+            }
+            100% {
+                opacity: .5;
+                top: 100%
+            }
+        }
+        
+        @keyframes fb_bounce_in_v2 {
+            0% {
+                opacity: 0;
+                transform: scale(0, 0);
+                transform-origin: bottom right
+            }
+            50% {
+                transform: scale(1.03, 1.03);
+                transform-origin: bottom right
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1, 1);
+                transform-origin: bottom right
+            }
+        }
+        
+        @keyframes fb_bounce_in_from_left {
+            0% {
+                opacity: 0;
+                transform: scale(0, 0);
+                transform-origin: bottom left
+            }
+            50% {
+                transform: scale(1.03, 1.03);
+                transform-origin: bottom left
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1, 1);
+                transform-origin: bottom left
+            }
+        }
+        
+        @keyframes fb_bounce_out_v2 {
+            0% {
+                opacity: 1;
+                transform: scale(1, 1);
+                transform-origin: bottom right
+            }
+            100% {
+                opacity: 0;
+                transform: scale(0, 0);
+                transform-origin: bottom right
+            }
+        }
+        
+        @keyframes fb_bounce_out_from_left {
+            0% {
+                opacity: 1;
+                transform: scale(1, 1);
+                transform-origin: bottom left
+            }
+            100% {
+                opacity: 0;
+                transform: scale(0, 0);
+                transform-origin: bottom left
+            }
+        }
+        
+        @keyframes slideInFromBottom {
+            0% {
+                opacity: .1;
+                transform: translateY(100%)
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+        
+        @keyframes slideInFromBottomDelay {
+            0% {
+                opacity: 0;
+                transform: translateY(100%)
+            }
+            97% {
+                opacity: 0;
+                transform: translateY(100%)
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+    </style>
+    <script charset="utf-8" src="https://platform.twitter.com/js/button.06b07097969b3b070809511391362bf4.js"></script>
 </head>
 
-<body>
-
-<div class="mainwrapper">
-
-    <!-- START HEADER -->
-    <div class="headwrapper">
-        <div class="header">
-            <div class="headerinner">
-                <div class="logo">
-                    <div class="logoinner">
-                        <h1><a href="index.html">Sam<span></span></a></h1>
-                    </div><!--logoinner-->
-                </div><!--logo-->
-                <div class="menu">
-                    <ul class="sf-menu">
-                        <li><a href="index.html"><span>Home</span></a>
-                        	<ul>
-                            	<li><a href="index2.html"><span>OneByOne Slider 2</span></a></li>
-                            </ul>
-                        </li>
-                        <li class="current"><a href="about.html"><span>Features</span></a>
-                            <ul>
-                                <li><a href="about.html"><span>Pages</span></a>
-                                    <ul>
-                                        <li><a href="about.html"><span>About Us</span></a></li>
-                                        <li><a href="services.html"><span>Services</span></a></li>
-                                        <li><a href="careers.html"><span>Careers</span></a></li>
-                                        <li><a href="fullwidth.html"><span>Full Width</span></a></li>
-                                        <li><a href="sidenavigation.html"><span>Side Navigation</span></a></li>
-                                        <li><a href="404.html"><span>404 Page</span></a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="columns.html"><span>Columns</span></a></li>
-                                <li><a href="elements.html"><span>Elements</span></a></li>
-                                <li><a href="pricing.html"><span>Pricing Tables</span></a></li>
-                            </ul>
-                        </li>
-                        <li><a href="blog.html"><span>Blog</span></a>
-                            <ul>
-                                <li><a href="blog.html"><span>Blog Right Sidebar</span></a></li>
-                                <li><a href="blog-left.html"><span>Blog Left Sidebar</span></a></li>
-                                <li><a href="blog-single.html"><span>Blog Single Page</span></a></li>
-                            </ul>
-                        </li>
-                        <li><a href="portfolio-4.html"><span>Portfolio</span></a>
-                            <ul>
-                                <li><a href="portfolio-4.html"><span>4 Columns</span></a>
-                                    <ul>
-                                        <li><a href="portfolio-4.html"><span>Default</span></a></li>
-                                        <li><a href="portfolio-4-borderless.html"><span>Borderless</span></a></li>
-                                        <li><a href="portfolio-4-author-borderless.html"><span>Borderless w/ Author</span></a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="portfolio-3.html"><span>3 Columns</span></a>
-                                    <ul>
-                                        <li><a href="portfolio-3.html"><span>Default</span></a></li>
-                                        <li><a href="portfolio-3-borderless.html"><span>Borderless</span></a></li>
-                                        <li><a href="portfolio-3-author.html"><span>Default w/ Author</span></a></li>
-                                        <li><a href="portfolio-3-author-borderless.html"><span>Borderless w/ Author</span></a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="portfolio-2.html"><span>2 Columns</span></a>
-                                    <ul>
-                                        <li><a href="portfolio-2.html"><span>Default</span></a></li>
-                                        <li><a href="portfolio-2-borderless.html"><span>Borderless</span></a></li>
-                                        <li><a href="portfolio-2-author.html"><span>Default w/ Author</span></a></li>
-                                        <li><a href="portfolio-2-author-borderless.html"><span>Borderless w/ Author</span></a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="portfolio-3left.html"><span>w/ Left Sidebar</span></a>
-                                    <ul>
-                                        <li><a href="portfolio-3left.html"><span>3 Columns</span></a></li>
-                                        <li><a href="portfolio-2left.html"><span>2 Columns</span></a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="portfolio-3right.html"><span>w/ Right Sidebar</span></a>
-                                    <ul>
-                                        <li><a href="portfolio-3right.html"><span>3 Columns</span></a></li>
-                                        <li><a href="portfolio-2right.html"><span>2 Columns</span></a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="portfolio-single.html"><span>Portfolio Single Post</span></a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contact.html"><span>Contact</span></a></li>
-                    </ul>
-                </div><!--menu-->
-            </div><!--headerinner-->
-        </div><!--header-->
-        
-        <div class="pagetitle">
-            <h1>Services</h1>
-            <span>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis...</span>
-            
-            <div class="searchwidget">
-                <form action="search.html" method="post">
-                    <input type="text" name="keyword" id="keyword" placeholder="Seach here..." />
-                </form>
-            </div><!--searchwidget-->
-        </div><!--pagetitle-->
-    
-    </div><!--headwrapper-->
-    <!-- END HEADER -->
-    
-    <!-- START OF MAIN CONTENT -->
-    <div class="maincontent">
-		 
-        <div class="contentinner">
-        	<h4 class="centeralign">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
-            <ul class="serviceslist">
-            	<li class="one_fourth">
-                	<div class="servicepanel">
-                        <a href="" class="servicelogo"><img src="images/icons/64/globe.png" alt="" /></a>
-                        <h4>Web Design</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p><a href="" class="readmore">Learn More <span>&rarr;</span></a></p>
-                    </div><!--servicepanel-->
-                </li>
-                <li class="one_fourth">
-                	<div class="servicepanel">
-                        <a href="" class="servicelogo"><img src="images/icons/64/footprints.png" alt="" /></a>
-                        <h4>Logo Design</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p><a href="" class="readmore">Learn More <span>&rarr;</span></a></p>
-                    </div><!--servicepanel-->
-                </li>
-                <li class="one_fourth">
-                	<div class="servicepanel">
-                        <a href="" class="servicelogo"><img src="images/icons/64/photography.png" alt="" /></a>
-                        <h4>Photography</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p><a href="" class="readmore">Learn More <span>&rarr;</span></a></p>
-                    </div><!--servicepanel-->
-                </li>
-                <li class="one_fourth last">
-                	<div class="servicepanel">
-                        <a href="" class="servicelogo"><img src="images/icons/64/video.png" alt="" /></a>
-                        <h4>Video Editing</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p><a href="" class="readmore">Learn More <span>&rarr;</span></a></p>
-                    </div><!--servicepanel-->
-                </li>
-            </ul>
-            
-            <br class="clearall" />
-            
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-            
-            <br />
-            
-            <div class="headlinebox">
-            	<a href="" class="btn btn-large btn-orange">Request a Quote</a>
-                <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</h4>
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos</p>
+<body data-new-gr-c-s-check-loaded="14.1063.0" data-gr-ext-installed="">
+    <div id="cboxOverlay" style="display: none;"></div>
+    <div id="colorbox" class="" style="padding-bottom: 42px; padding-right: 42px; display: none;">
+        <div id="cboxWrapper">
+            <div>
+                <div id="cboxTopLeft" style="float: left;"></div>
+                <div id="cboxTopCenter" style="float: left;"></div>
+                <div id="cboxTopRight" style="float: left;"></div>
             </div>
-            
-            
-        </div><!--contentinner--> 
-                                               
-    </div><!--maincontent-->
-    <!-- END OF MAIN CONTENT -->
-    
-    <!-- START OF FOOTER -->
-    <div class="footer">
-    	<div class="footerinner">
-        	
-            <div class="one_fourth about">
-            	<h4>About Sam</h4>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae ela. Sit voluptatem accusantium doloremque laudantium perspiciatis underastra ad... <a href="">Read more &raquo;</a></p> <br />
-                <h4>Awards &amp; Press</h4>
-                <ul>
-                	<li><a href="">Business Times</a></li>
-                    <li class="last"><a href="">Information Week</a></li>
-                    <li><a href="">PC Magazine</a></li>
-                    <li class="last"><a href="">Forbes</a></li>
-                </ul>
-            </div><!--one_fourth-->
-            
-            <div class="one_fourth posts">
-            	<h4>Latest Posts</h4>
-                <ul>
-                	<li>
-                    	<a href="">Building Web Presentations</a>
-                    	<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius...</span>
-                    </li>
-                    <li>
-                    	<a href="">Dynamic Page Generation in jQuery</a>
-                        <span>At vero eos et accusamus et iusto odio dignissimos ducimu...</span>
-                    </li>
-                    <li>
-                    	<a href="">13 Most Popular jQuery Plugins</a>
-                        <span>At vero eos et accusamus et iusto odio dignissimos ducimu...</span>
-                    </li>
-                </ul>
-            </div><!--one_fourth-->
-
-            <div class="one_fourth flickr">
-            	<h4>Flickr Feeds</h4>
-                <ul id="flickrfeed"></ul>
-            </div><!--one_fourth-->
-
-            <div class="one_fourth last follow">
-            	<h4>Follow Us</h4>
-                
-                <div class="followrapper">
-                    <div class="icon"><img src="images/facebook.png" alt="" /></div>
-                    <div class="followcontent">
-                        <h4>Follow us on Facebook</h4>
-                        <p>Like us to see our updates</p>
-                        <img src="images/fblike.png" alt="" />
-                    </div>
-                </div><!--followrapper-->
-                <div class="followrapper">
-                    <div class="icon"><img src="images/twitter.png" alt="" /></div>
-                    <div class="followcontent">
-                        <h4>Follow us on Twitter</h4>
-                        <p>Like us to see our updates</p>
-                        <img src="images/twfollow.png" alt="" />
-                    </div>
-                </div><!--followrapper-->
-                <div class="followother">
-                	<a href=""><img src="images/rss.png" alt="" /></a>
-                    <a href=""><img src="images/flickr.png" alt="" /></a>
-                    <a href=""><img src="images/reddit.png" alt="" /></a>
+            <div style="clear: left;">
+                <div id="cboxMiddleLeft" style="float: left;"></div>
+                <div id="cboxContent" style="float: left;">
+                    <div id="cboxLoadedContent" style="width: 0px; height: 0px; overflow: hidden; float: left;"></div>
+                    <div id="cboxLoadingOverlay" style="float: left;"></div>
+                    <div id="cboxLoadingGraphic" style="float: left;"></div>
+                    <div id="cboxTitle" style="float: left;"></div>
+                    <div id="cboxCurrent" style="float: left;"></div>
+                    <div id="cboxNext" style="float: left;"></div>
+                    <div id="cboxPrevious" style="float: left;"></div>
+                    <div id="cboxSlideshow" style="float: left;"></div>
+                    <div id="cboxClose" style="float: left;"></div>
                 </div>
-                
-            </div><!--one_fourth-->
-            
-            <br class="clearall" />
-                        
-        </div><!--footerinner-->
-        
-        <div class="footerbottom">
-           	<div class="footerbottominner">
-            	<div class="left">Copyright &copy; 2012. All Rights Reserved. Powered by: <a href="http://themepixels.com">ThemePixels.com</a></div>
-                <div class="right">
-                	<ul>
-                    	<li><a href="">Careers</a></li>
-                        <li><a href="">FAQ</a></li>
-                    	<li><a href="">Terms of Use</a></li>
-                        <li><a href="">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <br class="clearall" />
+                <div id="cboxMiddleRight" style="float: left;"></div>
             </div>
-        </div><!--footerbottom-->
+            <div style="clear: left;">
+                <div id="cboxBottomLeft" style="float: left;"></div>
+                <div id="cboxBottomCenter" style="float: left;"></div>
+                <div id="cboxBottomRight" style="float: left;"></div>
+            </div>
+        </div>
+        <div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div>
+    </div>
+    <div id="fb-root" class=" fb_reset">
+        <div style="position: absolute; top: -10000px; width: 0px; height: 0px;">
+            <div></div>
+        </div>
+    </div>
+    <script type="text/javascript" language="javascript">
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script type="text/javascript" language="javascript">
+        ! function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (!d.getElementById(id)) {
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "//platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }
+        }(document, "script", "twitter-wjs");
+    </script>
+    <form name="aspnetForm" method="post" action="./services.aspx" id="aspnetForm">
+        <div>
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNDMyNDU0NjAzZGRkE5+cLrhDQQlrugVnnt3/HRt/ZA==">
+        </div>
 
-    </div><!-- footer -->
-    <!-- END OF FOOTER -->
+        <div>
 
-</div><!--mainwrapper-->
-<div style="position:absolute;filter:alpha(opacity=0);opacity:0.001;z-index:10;">                                                                                                                                                </div></body>
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="3C6209F6">
+        </div>
+        <div class="mainwrapper">
+
+            <!-- START HEADER -->
+            <div class="headwrapper">
+                <div class="header">
+                    <div class="headerinner">
+                        <div class="logo">
+
+                            <div class="logoinner" style="padding-top:22px; padding-bottom:21px;">
+                                <img src="Images/trimlogo.png" style="border:none;">
+                                <!-- <h1><a href="index.html">Taxes<span></span></a></h1>-->
+                            </div>
+
+                        </div>
+                        <!--logo-->
+
+                        <div class="menu">
+                            <ul class="sf-menu sf-js-enabled sf-shadow">
+                                <li class="current"><a href="index.html"><span>Home</span></a>
+                                    <!--  Disabled Home sub menu. uncomment to enable additional menus <ul>
+                                        <li><a href="index2.html"><span>OneByOne Slider 2</span></a></li>
+                                    </ul> -->
+                                </li>
+                                <li><a href="services.html"><span>Services</span></a>
+                                    <!-- <ul>
+                                    <li><a href="aboutus.html"><span>Log In</span></a>
+                                       <ul>
+                                            <li><a href="aboutus.html"><span>About Us</span></a></li>
+                                            <li><a href="services.html"><span>Services</span></a></li>
+                                            <li><a href="careers.html"><span>Careers</span></a></li>
+                                            <li><a href="fullwidth.html"><span>Full Width</span></a></li>
+                                            <li><a href="sidenavigation.html"><span>Side Navigation</span></a></li>
+                                            <li><a href="404.html"><span>404 Page</span></a></li>
+                                        </ul>
+                                       
+                                    </li>
+                                    <li><a href="columns.html"><span>Columns</span></a></li>
+                                    <li><a href="elements.html"><span>Elements</span></a></li>
+                                    <li><a href="pricing.html"><span>Pricing Tables</span></a></li>
+                                     
+                                </ul>-->
+                                </li>
+                                <!--<li><a href="blog.html"><span>Quote</span></a>
+                                     <ul>
+                                    <li><a href="blog.html"><span>Blog Right Sidebar</span></a></li>
+                                    <li><a href="blog-left.html"><span>Blog Left Sidebar</span></a></li>
+                                    <li><a href="blog-single.html"><span>Blog Single Page</span></a></li>
+                                </ul>
+                                </li>-->
+                                <li><a href="aboutus.html"><span>About Us</span></a>
+                                    <!--  <ul>
+                                    <li><a href="portfolio-4.html"><span>4 Columns</span></a>
+                                        <ul>
+                                            <li><a href="portfolio-4.html"><span>Default</span></a></li>
+                                            <li><a href="portfolio-4-borderless.html"><span>Borderless</span></a></li>
+                                            <li><a href="portfolio-4-author-borderless.html"><span>Borderless w/ Author</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="portfolio-3.html"><span>3 Columns</span></a>
+                                        <ul>
+                                            <li><a href="portfolio-3.html"><span>Default</span></a></li>
+                                            <li><a href="portfolio-3-borderless.html"><span>Borderless</span></a></li>
+                                            <li><a href="portfolio-3-author.html"><span>Default w/ Author</span></a></li>
+                                            <li><a href="portfolio-3-author-borderless.html"><span>Borderless w/ Author</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="portfolio-2.html"><span>2 Columns</span></a>
+                                        <ul>
+                                            <li><a href="portfolio-2.html"><span>Default</span></a></li>
+                                            <li><a href="portfolio-2-borderless.html"><span>Borderless</span></a></li>
+                                            <li><a href="portfolio-2-author.html"><span>Default w/ Author</span></a></li>
+                                            <li><a href="portfolio-2-author-borderless.html"><span>Borderless w/ Author</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="portfolio-3left.html"><span>w/ Left Sidebar</span></a>
+                                        <ul>
+                                            <li><a href="portfolio-3left.html"><span>3 Columns</span></a></li>
+                                            <li><a href="portfolio-2left.html"><span>2 Columns</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="portfolio-3right.html"><span>w/ Right Sidebar</span></a>
+                                        <ul>
+                                            <li><a href="portfolio-3right.html"><span>3 Columns</span></a></li>
+                                            <li><a href="portfolio-2right.html"><span>2 Columns</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="portfolio-single.html"><span>Portfolio Single Post</span></a></li>
+                                </ul>
+                                -->
+                                </li>
+                                <li><a href="contact.html"><span>Contact US</span></a></li>
+                            </ul>
+                        </div>
+                        <!--menu-->
+                    </div>
+                    <!--headerinner-->
+                </div>
+                <!--header-->
+
+
+
+
+                <div class="pagetitle">
+                    <h1>Services</h1>
+                    <span>We are a full service tax firm located in Issaquah, WA. For years, we have been providing tax
+                        preparation, business tax and many other services to a wide range of clients, including both
+                        businesses and individuals. We specialize in relocation taxes, both inbound and outbound. We
+                        have developed a reputation for professional excellence through the high quality of services we
+                        perform for our clients.</span>
+
+                    <div class="searchwidget">
+                        &nbsp;
+                    </div>
+                    <!--searchwidget-->
+                </div>
+                <!--pagetitle-->
+
+            </div>
+            <!--headerwrapper-->
+            <!-- END HEADER -->
+
+            <!-- START OF MAIN CONTENT -->
+            <!--maincontent-->
+
+
+            <!-- START OF MAIN CONTENT -->
+            <div class="maincontent">
+
+                <div class="contentinner">
+                    <h4 class="centeralign">Personal Taxes</h4>
+                    <br class="clearall">
+                    <p>Your tax return will be prepared by an experienced tax preparer who understands the nuances of taxes and hence limits contacts by the IRS. The returns are rechecked by the professional tax preparation software providing the best combination
+                        in preparing your tax returns. Your tax return can be filed electronically so you will get a refund back quicker.</p>
+                    <br>
+                    <h4 class="centeralign">Business Taxes</h4>
+                    <br class="clearall">
+                    <p>Today’s tax environment brings home a world of challenges. It’s an environment in which tax authorities seek to maximize revenue, and where every tax decision an organization makes may come under increasing regulatory and legislative
+                        scrutiny. Having a tax consultant allows you to focus on the core business leaving the IRS worries to the professionals.</p>
+                    <br>
+                    <h4 class="centeralign">International Relocation Taxes</h4>
+                    <br class="clearall">
+                    <p>Relocation is a big change for you and your family. Getting settled in the country is your top priority. Understanding the tax laws and how they apply to you for your incomes across the two countries is not something you want to deal
+                        by yourself. We step in to help you take that ambiguity out and you have the backing of professional who will stand by you should IRS have any questions about your tax returns.
+                    </p><br>
+
+                    <h4 class="centeralign">Day-to-Day Tax Consulting Services</h4>
+                    <br class="clearall">
+                    <p><b>Tax Consulting: </b> We will answer all of your questions, as they impact both your tax and financial situations. Due diligence, consulting and research are included. We will advise you to setup face to face time, in person or Online.
+                        <br><br><b>Document Management:</b>Document Management is a rather detailed process, which when professionally managed is relatively painless and very secure. If unmanaged, you risk loss of documentary evidence and maybe liable
+                        for poor record keeping as well as audit issues. On the other hand, keeping records for too long can be counterproductive leading to excessive documentation and liability issues in due course of time. We can help drive the right
+                        practices and setup the proper document retention processes and procedures for you on a retention Basis or through annual audits.
+                    </p><br>
+
+
+                    <h4 class="centeralign">Tax Provision Services</h4>
+                    <br class="clearall">
+                    <p>Small Businesses, Household employers, corporations, special tax situations, all need to pay advance taxes. Engaging our services ensure that you are complaint with your tax responsibilities at all times. </p><br>
+
+                    <h4 class="centeralign">Tax Controversy Services</h4>
+                    <br class="clearall">
+                    <p>Our professional’s help people understand, anticipate and strategically respond to the IRS, from the beginning of a controversy to its final resolution. Primary services include IRS Exam Consulting and Appeals Assistance, and Alternative
+                        Dispute Resolution. Our services cover, but are not limited to:
+                        <br><br><b>Transaction Documentation Assistance </b> We can work with you during the planning phases of your transactions to ensure correct documentation.
+
+                        <br><br><b>General Examination Tax Consulting Assistance Including Pre-Filing / Pre-Examination
+                            Assistance </b> We assist during the examination, and assist with pre-filing procedures such as advance rulings, PFAs and Voluntary Disclosure Agreements (VDAs).
+
+                        <br><br><b>Exam Guidance and Traditional Appeals Assistance </b> During the Examination phase, we can assist with data accumulation and preparation of responses to Information Document Requests and other requests for information.
+                        We also provide strategic consulting advice, prepare protests to Appeals, and represent clients during the Appeals process.
+
+                        <br><br><b>Alternative Dispute Resolution (ADR) </b> We represent you in all ADR processes including Fast Track Mediation, post Appeals Mediation and post Appeals Arbitration.
+
+                        <br><br><b>Interest Computation and IRS Transcript Review </b> The Complex Interest practice analyzes and identifies errors on IRS transcripts, which may reduce interest liabilities or generate refunds on your behalf. In addition,
+                        the group performs interest computations and can work with IRS interest professionals to help ensure correct and accurate computations.
+                    </p><br>
+                    <h4 class="centeralign">Shared CFO Services</h4>
+                    <br class="clearall">
+                    <p>Having a full time finance lead is overhead most startups cannot afford, but having an insider that can be trusted with confidential information and have expert advice on hand is required to be successful in the business space. A part
+                        time CFO fills that gap by sharing his time across many organizations but acts in your best interest of each proactively. The CFO finds his role fulfilling as he/she is running a number of corporations and learning and broadening
+                        their lookout as well as become a major resource for cross leverage and alliances. That means, being available to review not just the transactions that have happened but being available for transactions that the company may be
+                        looking at getting into, running “what if” scenarios, and really being part of the organization, that “trusted advisor” role that is most required.
+                    </p><br>
+
+                    <div class="headlinebox">
+                        <a href="contactus.aspx" class="btn btn-large btn-orange">Contact Us</a>
+                        <h4>Get a quote in simple steps.</h4>
+                        <p>Provide some basic information about your tax needs and a way to contact you in the next screen. <br>A tax professional contact you with a quote.</p>
+                    </div>
+
+
+                </div>
+                <!--contentinner-->
+
+            </div>
+            <!--maincontent-->
+            <!-- END OF MAIN CONTENT -->
+
+
+            <!-- END OF MAIN CONTENT -->
+
+            <!-- START OF FOOTER -->
+            <div class="footer">
+                <div class="footerinner">
+
+                    <div class="one_fourth about">
+                        <h4>About TaxesByRadha</h4>
+                        <p>We are in the business of Tax Returns. “Taxes By Radha” does not close down after the Tax season. We remain open to answer all your queries, always behind you and always working in your favor. We do not shut doors after April 15,
+                            we do not make you wait on the phone, and you always talk to a person when you call in.
+                            <a href="about.aspx">Read more »</a>
+                        </p> <br>
+                        <!--<h4>Awards &amp; Press</h4>
+                    <ul>
+                        <li><a href="">Business Times</a></li>
+                        <li class="last"><a href="">Information Week</a></li>
+                        <li><a href="">PC Magazine</a></li>
+                        <li class="last"><a href="">Forbes</a></li>
+                    </ul>-->
+                    </div>
+                    <!--one_fourth-->
+
+                    <div class="one_fourth posts last">
+                        <h4>Member of</h4>
+                        <ul>
+                            <li>
+                                <a href="">WSCPA</a>
+                                <span>Washington Society of Certified Public Accountants...<a
+                                        href="http://www.wscpa.org/content/home.aspx" target="_blank"
+                                        style="font-size:small; font-weight:normal;">More</a></span>
+                            </li>
+                            <li>
+                                <a href="">AICPA</a>
+                                <span>American Institute of CPAs...<a href="http://www.aicpa.org/Pages/Default.aspx"
+                                        target="_blank" style="font-size:small; font-weight:normal;">More</a></span>
+                            </li>
+                            <!-- 
+                        <li>
+                            <a href="">13 Most Popular jQuery Plugins</a>
+                            <span>At vero eos et accusamus et iusto odio dignissimos ducimu...</span>
+                        </li>-->
+                        </ul>
+                    </div>
+                    <!--one_fourth-->
+
+                    <div class="one_fourth flickr">
+                        <h4>Our Team</h4>
+                        <table cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <ul>
+                                            <li>
+                                                <a title="Beauty" class="cboxElement" href="#" rel="colorbox"><img src="Images/radha.png" style="width:50px;" alt="Radha Aggarwal"></a>
+                                            </li>
+                                        </ul>
+                                        <span style="font-weight :bold;">Ms Radha Aggarwal</span><br>
+                                        <span style="font-weight :normal;">CPA, Principal</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ul>
+                                            <li>
+                                                <a title="Beauty" class="cboxElement" href="#" rel="colorbox"><img src="Images/naveen.png" style="height:50px;" alt="Radha Aggarwal"></a>
+                                            </li>
+                                        </ul>
+                                        <span style="font-weight :bold;">Mr Naveen Aggarwal</span><br>
+                                        <span style="font-weight :normal;">Business Manager</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--one_fourth-->
+
+                    <div class="one_fourth last follow">
+                        <h4>Follow Us</h4>
+
+                        <div class="followrapper">
+                            <div class="icon">
+                                <a href="http://www.facebook.com/TaxesByRadha"><img src="images/facebook.png" alt=""></a>
+                            </div>
+                            <div class="followcontent">
+                                <h4>Follow us on Facebook</h4>
+                                <p>Like us to see our updates</p>
+                                <div class="fb-like fb_iframe_widget" data-href="http://www.facebook.com/TaxesByRadha" data-send="false" data-layout="button_count" data-width="180" data-show-faces="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=288&amp;href=http%3A%2F%2Fwww.facebook.com%2FTaxesByRadha&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=180">
+                                    <span style="vertical-align: bottom; width: 90px; height: 28px;"><iframe
+                                            name="f26a7f55886265c" width="180px" height="1000px"
+                                            data-testid="fb:like Facebook Social Plugin"
+                                            title="fb:like Facebook Social Plugin" frameborder="0"
+                                            allowtransparency="true" allowfullscreen="true" scrolling="no"
+                                            allow="encrypted-media"
+                                            src="https://www.facebook.com/plugins/like.php?app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df18a554bb8b4d7c%26domain%3Dwww.taxesbyradha.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.taxesbyradha.com%252Ff1721470933c798%26relation%3Dparent.parent&amp;container_width=288&amp;href=http%3A%2F%2Fwww.facebook.com%2FTaxesByRadha&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=180"
+                                            style="border: none; visibility: visible; width: 90px; height: 28px;"
+                                            class=""></iframe></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--followrapper-->
+                        <div class="followrapper">
+                            <div class="icon"><img src="images/twitter.png" alt=""></div>
+                            <div class="followcontent">
+                                <h4>Follow us on Twitter</h4>
+                                <p>Like us to see our updates</p>
+                                <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 164px; height: 20px;" title="Twitter Follow Button"
+                                    src="https://platform.twitter.com/widgets/follow_button.d7fc2fc075c61f6fa34d79a0cbbf1e34.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=taxesbyradha&amp;show_count=false&amp;show_screen_name=true&amp;size=m&amp;time=1655418886359"
+                                    data-screen-name="taxesbyradha"></iframe>
+                            </div>
+                        </div>
+                        <!--followrapper-->
+                        <div class="followother">
+                            <a target="_blank" href="http://www.linkedin.com/company/taxes-by-radha"><img src="images/linkedin_32.png" alt=""></a>
+                            <a target="_blank" href="http://www.yelp.com/biz/taxes-by-radha-issaquah"><img src="Images/yelp_dark.png" alt=""></a>
+                            <a target="_blank" href="http://www.skype.com"><img src="Images/skype_32.png" alt=""></a>
+                        </div>
+
+                    </div>
+                    <!--one_fourth-->
+
+                    <br class="clearall">
+
+                </div>
+                <!--footerinner-->
+
+                <div class="footerbottom">
+                    <div class="footerbottominner">
+                        <div class="left">Copyright © 2013. All Rights Reserved.</div>
+                        <div class="right">
+                            <ul>
+                                <li><a href="">Careers</a></li>
+                                <li><a href="">FAQ</a></li>
+                                <li><a href="">Terms of Use</a></li>
+                                <li><a href="Privacypolicy.aspx">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <br class="clearall">
+                    </div>
+                </div>
+                <!--footerbottom-->
+
+            </div>
+            <!-- footer -->
+            <!-- END OF FOOTER -->
+
+        </div>
+        <!--mainwrapper-->
+
+
+    </form>
+
+
+
+
+    <iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.d7fc2fc075c61f6fa34d79a0cbbf1e34.html?origin=https%3A%2F%2Fwww.taxesbyradha.com" title="Twitter settings iframe" style="display: none;"></iframe>
+    <iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe"></iframe>
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
 </html>
